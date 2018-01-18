@@ -12,8 +12,11 @@ public class LoadScene : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
 
     public void LoadGame()
     {
@@ -23,8 +26,5 @@ public class LoadScene : MonoBehaviour {
     {
         SceneManager.LoadScene("Instruction");
     }
-    public void ExitGame()
-    {
-        Application.Quit();
-    }
+
 }
