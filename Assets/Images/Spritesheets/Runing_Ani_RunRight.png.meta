@@ -1,0 +1,773 @@
+fileFormatVersion: 2
+guid: 20694d02182749246bff776cd48cb9f9
+timeCreated: 1507061428
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Runing_Ani_RunRight_0
+    21300002: Runing_Ani_RunRight_1
+    21300004: Runing_Ani_RunRight_2
+    21300006: Runing_Ani_RunRight_3
+    21300008: Runing_Ani_RunRight_4
+    21300010: Runing_Ani_RunRight_5
+    21300012: Runing_Ani_RunRight_6
+    21300014: Runing_Ani_RunRight_7
+    21300016: Runing_Ani_RunRight_8
+    21300018: Runing_Ani_RunRight_9
+    21300020: Runing_Ani_RunRight_10
+    21300022: Runing_Ani_RunRight_11
+    21300024: Runing_Ani_RunRight_12
+    21300026: Runing_Ani_RunRight_13
+    21300028: Runing_Ani_RunRight_14
+    21300030: Runing_Ani_RunRight_15
+    21300032: Runing_Ani_RunRight_16
+    21300034: Runing_Ani_RunRight_17
+    21300036: Runing_Ani_RunRight_18
+    21300038: Runing_Ani_RunRight_19
+    21300040: Runing_Ani_RunRight_20
+    21300042: Runing_Ani_RunRight_21
+    21300044: Runing_Ani_RunRight_22
+    21300046: Runing_Ani_RunRight_23
+    21300048: Runing_Ani_RunRight_24
+    21300050: Runing_Ani_RunRight_25
+    21300052: Runing_Ani_RunRight_26
+    21300054: Runing_Ani_RunRight_27
+    21300056: Runing_Ani_RunRight_28
+    21300058: Runing_Ani_RunRight_29
+    21300060: Runing_Ani_RunRight_30
+    21300062: Runing_Ani_RunRight_31
+    21300064: Runing_Ani_RunRight_32
+    21300066: Runing_Ani_RunRight_33
+    21300068: Runing_Ani_RunRight_34
+    21300070: Runing_Ani_RunRight_35
+    21300072: Runing_Ani_RunRight_36
+    21300074: Runing_Ani_RunRight_37
+    21300076: Runing_Ani_RunRight_38
+    21300078: Runing_Ani_RunRight_39
+    21300080: Runing_Ani_RunRight_40
+    21300082: Runing_Ani_RunRight_41
+    21300084: Runing_Ani_RunRight_42
+    21300086: Runing_Ani_RunRight_43
+    21300088: Runing_Ani_RunRight_44
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3
+        width: 226
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 37
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_2
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 8
+        width: 222
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_3
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 41
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_4
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 8
+        width: 228
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_5
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 18
+        width: 266
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_6
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 8
+        width: 265
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_7
+      rect:
+        serializedVersion: 2
+        x: 1491
+        y: 14
+        width: 263
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_8
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 16
+        width: 212
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_9
+      rect:
+        serializedVersion: 2
+        x: 2117
+        y: 19
+        width: 211
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_10
+      rect:
+        serializedVersion: 2
+        x: 2432
+        y: 8
+        width: 208
+        height: 292
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_11
+      rect:
+        serializedVersion: 2
+        x: 2708
+        y: 7
+        width: 211
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_12
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 16
+        width: 213
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_13
+      rect:
+        serializedVersion: 2
+        x: 3317
+        y: 4
+        width: 217
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_14
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 0
+        width: 233
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_15
+      rect:
+        serializedVersion: 2
+        x: 3928
+        y: 0
+        width: 234
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_16
+      rect:
+        serializedVersion: 2
+        x: 4246
+        y: 0
+        width: 227
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_17
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 16
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_18
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 17
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_19
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 9
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_20
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 10
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_21
+      rect:
+        serializedVersion: 2
+        x: 2201
+        y: 11
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_22
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 12
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_23
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 13
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_24
+      rect:
+        serializedVersion: 2
+        x: 3133
+        y: 15
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_25
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 6
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_26
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 6
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_27
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 5
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_28
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 3
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_29
+      rect:
+        serializedVersion: 2
+        x: 3096
+        y: 8
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_30
+      rect:
+        serializedVersion: 2
+        x: 3148
+        y: 11
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_31
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 0
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_32
+      rect:
+        serializedVersion: 2
+        x: 3390
+        y: 8
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_33
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 9
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_34
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 3
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_35
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_36
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 7
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_37
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 3
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_38
+      rect:
+        serializedVersion: 2
+        x: 1555
+        y: 3
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_39
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 6
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_40
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 3
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_41
+      rect:
+        serializedVersion: 2
+        x: 3478
+        y: 6
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_42
+      rect:
+        serializedVersion: 2
+        x: 3496
+        y: 1
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_43
+      rect:
+        serializedVersion: 2
+        x: 2844
+        y: 0
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Runing_Ani_RunRight_44
+      rect:
+        serializedVersion: 2
+        x: 3071
+        y: 0
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
