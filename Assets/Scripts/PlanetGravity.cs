@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlanetGravity : MonoBehaviour {
 
-    float gravity = 6;
+    float gravity = 8;
 
     GameObject player;
     TouchInput playerInput;
