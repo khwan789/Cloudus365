@@ -7,13 +7,11 @@ public class PlanetGravity : MonoBehaviour {
     float gravity = 8;
 
     GameObject player;
-    TouchInput playerInput;
 
     // Use this for initialization
     void Start () {
 
         player = GameObject.Find("Spaceman");
-        playerInput = player.GetComponent<TouchInput>();
     }
 	
 	// Update is called once per frame

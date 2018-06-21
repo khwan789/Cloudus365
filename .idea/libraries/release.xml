@@ -1,0 +1,33 @@
+<component name="libraryTable">
+  <library name="release">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-nearby-11.6.2_be421489db16efb8341fa0185f4b1a1a0b90f876.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-auth-11.6.2_6902976fe420fc81a2b84fc273d9dc607f0c97b4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/unity-plugin-library_5ba5d806c8a3fcad8ec9561e1490f970a0091882.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-basement-11.6.2_1ac5fa8279cf7e7ebd66542efd70c0d2782a1493.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.android.support.support-core-ui-25.2.0_bbb0befb65bc496c94aa4dd403671022d8fab620.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.android.support.support-v4-25.2.0_dd5718a4e4c3060472331a6c628f794625ef9930.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-drive-11.6.2_da269db1822ffb28366cdf1be9deb0bafaebed93.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.android.support.support-compat-25.2.0_ad9069d9df699fb786567a5cef1000ff0134a1f0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-tasks-11.6.2_cb0778a2c4a77987c8e2665efb9acbfadf357c26.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-ads-lite-11.6.2_0f03210ac7698da586b86e04f4886f8f72726c00.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/unity-classes_50467a7c9b7a63c576de8f2dbb25de480fdca5ef.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/gradleOut-GoogleMobileAdsPlugin-unspecified_5c5887dd704d4154f0fa417d68f5dd9a2b9bb1a7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/com.android.support.support-annotations-25.2.0_d5acb0ed467b1aa4b430653704c9254a13f02301.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.android.support.support-core-utils-25.2.0_7da577e5b52ecb01002562c0da247aca89ad6027.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.games.gpgs-plugin-support-0.9.50_f7c262e4e06354fdedad5547345f0c5006e1fbe7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-ads-11.6.2_d7d9343de26eacc96971f9e2677701633bbc7dcb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.android.support.support-fragment-25.2.0_33802d50bbb68ab42da6e232b7f7a88afb052aaf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.android.support.support-media-compat-25.2.0_c6546f32c87aedf089661280992d3bdb6fcd385d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-gass-11.6.2_80275311fd7b21a9f722c05dcf6e524f2227e409.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/gradleOut-GooglePlayGamesManifest.plugin-unspecified_dd7831cee3c85d483779c699b07a6bcd8b8754ef.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-auth-base-11.6.2_34b25efb0aa0f13aac585664ed904852ff719c76.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-auth-api-phone-11.6.2_15061a206544e57e12c8e9ca9f617dae89a95582.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/release_762868eebfbc00090cdf6295190b6ed6b044b4f0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-base-11.6.2_44bc7fc478bd96f6f481aadb5e0e9f5a9b8e68ec.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Temp/gradleOut/build/intermediates/pre-dexed/release/intermediates-exploded-aar-com.google.android.gms.play-services-games-11.6.2_d1d2fff95766796f8f0c5562d7e6fd066778457e.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

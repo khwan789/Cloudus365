@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class TouchInput : MonoBehaviour
 {
@@ -21,11 +22,14 @@ public class TouchInput : MonoBehaviour
 
     Timer currTime;
 
-    float moveSpeed = 3;
+    float moveSpeed = 4;
 
     float waitTime;
 
     Animator playerAnimation;
+
+    GameObject player;
+    Health playerHealth;
 
     // Use this for initialization
     void Start()
@@ -47,6 +51,9 @@ public class TouchInput : MonoBehaviour
         // Player animation
         playerAnimation = this.GetComponent<Animator>();
 
+        player = GameObject.Find("Spaceman");
+        playerHealth = player.GetComponent<Health>();
+
     }
 
     // Update is called once per frame
@@ -54,12 +61,11 @@ public class TouchInput : MonoBehaviour
     {
 
         //Check currTime. If it is 150 then increase speed by 1. Increase speed by 1 at every 50
-        if(((int)currTime.time >= 50.0f) && ((int)currTime.time % 50 == 0) && moveSpeed <= 5)
+        if (((int)currTime.time >= 50.0f) && ((int)currTime.time % 50 == 0) && moveSpeed <= 6)
         {
             if (Time.time > waitTime)
             {
                 moveSpeed++;
-                Debug.Log(moveSpeed);
                 waitTime = Time.time + 1.0f;
             }
         }
@@ -95,55 +101,61 @@ public class TouchInput : MonoBehaviour
             }
         }
 
-        // If the player has touched and released the screen and the they are on the ground then the player jumps.
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began && IsJumping == false)
+        if (Input.touchCount > 0)
         {
-            if (!(pausePopup.Paused))
+            Touch touch = Input.GetTouch(0);
+            // If the player has touched and released the screen and the they are on the ground then the player jumps.
+
+            if (touch.phase == TouchPhase.Began && isJumping == false)
             {
-                if (isPerimeter == false)
+                if (EventSystem.current.IsPointerOverGameObject(touch.fingerId))
                 {
-
-                    numJumps++;
-
-                    if (numJumps == 2)
-                    {
-                        this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-                    }
-                    this.GetComponent<Rigidbody2D>().AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
-
-               
-                    IsJumping = true;
-                    
-                    GetComponent<AudioSource>().PlayOneShot(jumpSound, 1);
+                    return;
                 }
-                else
+                if (!(pausePopup.Paused))
                 {
-                    if (isMovingLeft == true)
+                    if (isPerimeter == false)
                     {
-                        isMovingLeft = false;
+                        numJumps++;
+
+                        if (numJumps == 2)
+                        {
+                            this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+                        }
+                        this.GetComponent<Rigidbody2D>().AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+
+                        isJumping = true;
+
+                        GetComponent<AudioSource>().PlayOneShot(jumpSound, 1);
                     }
                     else
                     {
-                        isMovingLeft = true;
+                        if (playerHealth.Invul == false)
+                        {
+                            if (isMovingLeft == true)
+                            {
+                                isMovingLeft = false;
+                            }
+                            else
+                            {
+                                isMovingLeft = true;
+                            }
+                            GameObject.Find("Cloudus 456").GetComponent<obstacleGenerator>().ChangeDirection(isMovingLeft);
+                            isPerimeter = false;
+                        }
                     }
-                    GameObject.Find("Cloudus 456").GetComponent<obstacleGenerator>().ChangeDirection(isMovingLeft);
-                    isPerimeter = false;
+                }
+            }
+            if (touch.phase == TouchPhase.Ended)
+            {
+                if (numJumps != 2)
+                {
+                    isJumping = false;
                 }
             }
         }
-
-
-        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended)
-        {
-            if (numJumps != 2)
-            {
-                IsJumping = false;
-            }
-        }
-
-
         // For testing through computer.
-        if (Input.GetKeyDown(KeyCode.W) && IsJumping == false)
+        if (Input.GetKeyDown(KeyCode.W) && isJumping == false)
         {
             if (!(pausePopup.Paused))
             {
@@ -157,23 +169,26 @@ public class TouchInput : MonoBehaviour
                         this.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
                     }
                     this.GetComponent<Rigidbody2D>().AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
-               
-                    IsJumping = true;
-  
+
+                    isJumping = true;
+
                     GetComponent<AudioSource>().PlayOneShot(jumpSound, 1);
                 }
                 else
                 {
-                    if (isMovingLeft == true)
+                    if (playerHealth.Invul == false)
                     {
-                        isMovingLeft = false;
+                        if (isMovingLeft == true)
+                        {
+                            isMovingLeft = false;
+                        }
+                        else
+                        {
+                            isMovingLeft = true;
+                        }
+                        GameObject.Find("Cloudus 456").GetComponent<obstacleGenerator>().ChangeDirection(isMovingLeft);
+                        isPerimeter = false;
                     }
-                    else
-                    {
-                        isMovingLeft = true;
-                    }
-                    GameObject.Find("Cloudus 456").GetComponent<obstacleGenerator>().ChangeDirection(isMovingLeft);
-                    isPerimeter = false;
                 }
             }
         }
@@ -182,13 +197,13 @@ public class TouchInput : MonoBehaviour
         {
             if (numJumps != 2)
             {
-                IsJumping = false;
+                isJumping = false;
             }
         }
 
         if (Input.GetKey(KeyCode.Escape))
         {
-            if(!pausePopup.Dead)
+            if (!pausePopup.Dead)
                 pausePopup.Pause();
         }
 
@@ -198,12 +213,12 @@ public class TouchInput : MonoBehaviour
         }
     }
 
-    // When the player has touched the floor then they are able to jump again.
+    // When the player has  ed the floor then they are able to jump again.
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name == "Cloudus 456")
         {
-            IsJumping = false;
+            isJumping = false;
             numJumps = 0;
             playerAnimation.speed = 1.0f;
         }
@@ -247,6 +262,16 @@ public class TouchInput : MonoBehaviour
             numJumps = value;
         }
     }
+    public bool MoveLeft {
+        get
+        {
+            return isMovingLeft;
+        }
+        set
+        {
+            isMovingLeft = value;
+        }
+    }
 }
 
- 
+

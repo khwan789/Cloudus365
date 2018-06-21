@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class bgGenerater : MonoBehaviour {
     public int type; // 0 == top  1 == down
-    private int otherSideType;
     private float randomAngle;
     private float currentAngle;
     private float finalAngle;
@@ -43,12 +42,10 @@ public class bgGenerater : MonoBehaviour {
                 case 0:
                     currentAngle = 180;
                     finalAngle = 360;
-                    otherSideType = 1;
                     break;
                 case 1:
                     currentAngle = 0;
                     finalAngle = 180;
-                    otherSideType = 0;
                     break;
                 default:
                     break;

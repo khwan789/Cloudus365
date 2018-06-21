@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using GooglePlayGames;
 
 public class Popup : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class Popup : MonoBehaviour
     public Button deathExitButton;
     public GameObject deathPopup;
 
-    bool dead;
+    public static bool dead;
 
     public GameObject character;
     Health health;
@@ -50,7 +51,6 @@ public class Popup : MonoBehaviour
     public GameObject WTwicePopup;
     public GameObject tapOncePopup;
     public GameObject tapTwicePopup;
-    bool runOnce = false;
     GameObject[] tutPCObjs;
     GameObject[] tutDroidObjs;
     float waitTime = 0.0f;
@@ -89,23 +89,16 @@ public class Popup : MonoBehaviour
         sfxBtn.onClick.AddListener(delegate { SfxMute(sfx); });
         sfxBtn.onClick.AddListener(buttonClickSound);
 
-        if (PlayerPrefs.GetInt("bgmOff") == 1)
+        //if getint is 0 volume = 1 --> opposite
+        if (PlayerPrefs.GetInt("bgmOff") == 0)
         {
             bgm.volume = 1;
-        }
-        else
-        {
-            bgm.volume = 0;
-        }
-
-        if (PlayerPrefs.GetInt("sfxOff") == 1)
+        }else { bgm.volume = 0; }
+        if (PlayerPrefs.GetInt("sfxOff") == 0)
         {
             sfx.volume = 1;
         }
-        else
-        {
-            sfx.volume = 0;
-        }
+        else { sfx.volume = 0; }
 
         //death
         Button playAgainBtn = playAgainButton.GetComponent<Button>();
@@ -119,7 +112,7 @@ public class Popup : MonoBehaviour
         deathPopup.SetActive(false);
 
         health = character.GetComponent<Health>();
-        dead = health.Over;
+        dead = false;
 
         //score
         score = timer.GetComponent<Timer>();
@@ -149,6 +142,7 @@ public class Popup : MonoBehaviour
 
         // PlayerPrefs
         playedOnce = PlayerPrefs.GetInt("Played");
+
     }
 
     // Update is called once per frame
@@ -168,7 +162,6 @@ public class Popup : MonoBehaviour
 
         if ((playedOnce == 0))
         {
-
             if (!(count > 2))
             {
                 RunTutorial();
@@ -191,6 +184,8 @@ public class Popup : MonoBehaviour
     {
         if (dead == true && deathPopup.activeSelf == false)
         {
+            AndAdScript.nums--;
+
             if ((int)score.time > _best)
             {
                 _best = (int)score.time;
@@ -201,6 +196,7 @@ public class Popup : MonoBehaviour
             curScore.text = "" + (int)score.time;
             deathPopup.SetActive(true);
             Dead = true;
+
         }
     }
     void Continue()
@@ -216,7 +212,7 @@ public class Popup : MonoBehaviour
     {
         if (pausePopup.activeSelf == true || deathPopup == true)
         {
-            Application.Quit();
+            SceneManager.LoadScene("Menu");
         }
     }
 
@@ -252,16 +248,27 @@ public class Popup : MonoBehaviour
         }
     }
 
+    public int Score
+    {
+        get
+        {
+            return _best;
+        }
+        set
+        {
+            _best = value;
+        }
+    }
     void BgmMute(AudioSource source)
     {
         if (PlayerPrefs.GetInt("bgmOff") == 1)
         {
-            source.volume = 0;
+            source.volume = 1;
             PlayerPrefs.SetInt("bgmOff", 0);
         }
         else
         {
-            source.volume = 1;
+            source.volume = 0;
             PlayerPrefs.SetInt("bgmOff", 1);
         }
     }
@@ -270,77 +277,67 @@ public class Popup : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("sfxOff") == 1)
         {
-            source.volume = 0;
+            source.volume = 1;
             PlayerPrefs.SetInt("sfxOff", 0);
         }
         else
         {
-            source.volume = 1;
+            source.volume = 0;
             PlayerPrefs.SetInt("sfxOff", 1);
         }
     }
 
     public void RunTutorial()
     {
-        if (Application.platform == RuntimePlatform.WindowsEditor)
+
+        if (count > 0)
+            tutDroidObjs[count - 1].SetActive(false);
+
+        if (touchInput.IsJumping == true && count == 0)
         {
-            if (count > 0)
-                tutPCObjs[count - 1].SetActive(false);
+            count = 1;
+            print(touchInput.IsJumping + "1");
+        }
 
-            if (Input.GetKey(KeyCode.W) && count == 0)
+        if (touchInput.IsJumping == true && count == 1 && touchInput.NumJumps == 2)
+        {
+            count = 2;
+            print(touchInput.IsJumping + "2");
+        }
+
+        if (!tutDroidObjs[count].activeSelf)
+            tutDroidObjs[count].SetActive(true);
+
+        if (count == 2)
+        {
+            if (Time.time >= waitTime)
             {
-                count = 1;
-            }
-
-            if (Input.GetKey(KeyCode.W) && count == 1 && touchInput.NumJumps == 2)
-            {
-                count = 2;
-            }
-
-            if (!tutPCObjs[count].activeSelf)
-                tutPCObjs[count].SetActive(true);
-
-            if (count == 2)
-            {
-                if (Time.time >= waitTime)
+                if (waitTime != 0)
                 {
-                    if (waitTime != 0)
-                    {
-                        tutDroidObjs[2].SetActive(false);
-                        tutPCObjs[2].SetActive(false);
+                    tutDroidObjs[2].SetActive(false);
+                    tutDroidObjs[2].SetActive(false);
 
-                        count = 3;
-                    }
-
-                    waitTime = Time.time + 2.0f;
+                    count = 3;
                 }
 
+                waitTime = Time.time + 2.0f;
             }
 
         }
 
-
-        if (Application.platform == RuntimePlatform.WindowsPlayer)
+        if (count > 0)
         {
-            if (count > 0)
-                tutPCObjs[count - 1].SetActive(false);
-            if (!tutPCObjs[count].activeSelf)
-                tutPCObjs[count].SetActive(true);
-            count++;
-        }
-
-        if (Application.platform == RuntimePlatform.Android)
-        {
-            if (count > 0)
-                tutDroidObjs[count - 1].SetActive(false);
-            if (!tutDroidObjs[count].activeSelf)
-                tutDroidObjs[count].SetActive(true);
-            count++;
-
+            tutDroidObjs[count - 1].SetActive(false);
         }
     }
 
-    void buttonClickSound() {
+    void buttonClickSound()
+    {
         GetComponent<AudioSource>().PlayOneShot(buttonSound);
+    }
+
+    public void AddScoreToLeaderboard()
+    {
+        MainMenuEvents.AddScoreToLeaderboard(LeaderboardManager.leaderboard_cloudus_365, _best);
     }
 }

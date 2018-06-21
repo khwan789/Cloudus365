@@ -19,14 +19,13 @@ public class obstacleGenerator : MonoBehaviour {
     private int currentArea;
     private int nextArea;
 
+
     private bool placeWall;
     private int wallSpowningTime;
     private bool changedArea;
 
     private bool isMovingLeft;
-
-    public AudioClip collideSound;
-
+    
     // Use this for initialization
     void Start()
     {
@@ -34,8 +33,9 @@ public class obstacleGenerator : MonoBehaviour {
         ResetSpownTime();
 
         player = GameObject.FindGameObjectWithTag("Player");
+
         playerAngle = Vector2.Angle(new Vector2(0, 1), player.transform.position);
-        angleDistance = 20;
+        angleDistance = 25;
         obstacleAngle = playerAngle + angleDistance;
 
         currentArea = 1;
@@ -44,14 +44,14 @@ public class obstacleGenerator : MonoBehaviour {
         changedArea = false;
         placeWall = false;
         isMovingLeft = false;
-        wallSpowningTime = 50;
+        wallSpowningTime = 10;
     }
 
     // Update is called once per frame
     void Update()
     {
         timer = GameObject.Find("timer").GetComponent<Timer>().GetTime;
-        player = GameObject.FindGameObjectWithTag("Player");
+
         float tempAngle = Vector2.Angle(new Vector2(-1,0), player.transform.position);
 
 
@@ -82,14 +82,9 @@ public class obstacleGenerator : MonoBehaviour {
 
             }
         }
-        //print("PlayerAngle " + playerAngle);
-       // print("obstacleAngle " + obstacleAngle);
 
-        //print("timer" + timer);
         if (timer >= nextSpownTime)
         {
-            //print("Generated now " );
-
             // every few second
             GenerateObstcale();
             ResetSpownTime();
@@ -98,75 +93,45 @@ public class obstacleGenerator : MonoBehaviour {
 
         if ((playerAngle >=175 && playerAngle <= 185)|| (playerAngle >= 345 && playerAngle <= 355)){
             // change current type
-            //print("Current type " + currentArea + " Next type: " + nextArea);
             if(currentArea != nextArea) 
             {
                 currentArea = nextArea;
             }
         }
 
-        int timInt = (int)timer;
-
-        if(timInt > wallSpowningTime)
-        {
-            if(timInt% wallSpowningTime == 0 && placeWall == false)
-            {
-                placeWall = true;
-                //print("wall1");
-            }
-        }
-        else if(timInt == wallSpowningTime && placeWall == false)
-        {
-            placeWall = true;
-           // print("wall2");
-
-        }
-        //print("Timer in int " + (int)timer );
-
-
-        
+                
     }
     private void ResetSpownTime()
     {
-        print("Timer: " + timer);
         if (timer > 1 && timer <= 30)
         {
-            randomSpownTime = Random.Range(5, 7);
+            randomSpownTime = Random.Range(4, 6);
             nextSpownTime = timer + randomSpownTime;
-            print("haha 1-50  Generated Time " + randomSpownTime);
         }
         else if (timer > 30 && timer <= 60)
         {
             randomSpownTime = Random.Range(3, 5);
             nextSpownTime = timer + randomSpownTime;
-            print("50-100  Generated Time " + randomSpownTime);
 
         }
         else if (timer > 60 && timer <= 90)
         {
             randomSpownTime = Random.Range(2, 4);
             nextSpownTime = timer + randomSpownTime;
-            print("100-150  Generated Time " + randomSpownTime);
 
         }
         else
         {
             randomSpownTime = Random.Range(2, 3);
             nextSpownTime = timer + randomSpownTime;
-            print("150-     Generated Time " + randomSpownTime);
-
-
         }
     }
 
     private void GenerateObstcale()
     {
-       // print("Generate at " + obstacleAngle);
-
         Vector2 pos = new Vector2(Mathf.Cos(obstacleAngle * Mathf.Deg2Rad)*15, Mathf.Sin(obstacleAngle * Mathf.Deg2Rad) * 15);
         GameObject ob = GameObject.Instantiate(RandomSprite(currentArea)) as GameObject;
         ob.transform.position = new Vector2(-pos.x, pos.y);
-       // print("Position at " + ob.transform.position);
 
     }
 
@@ -174,13 +139,16 @@ public class obstacleGenerator : MonoBehaviour {
     private GameObject RandomSprite(int currentArea)
     {
         GameObject newSprite;
-        if (placeWall == true)
+        if (Random.value > 0.9)
         {
-            newSprite = Resources.Load<GameObject>("Obstacles/wall");
-
-            placeWall = false;
-
-
+            if (isMovingLeft)
+            {
+                newSprite = Resources.Load<GameObject>("Obstacles/wall1");
+            }
+            else
+            {
+                newSprite = Resources.Load<GameObject>("Obstacles/wall");
+            }
         }
         else
         {
@@ -228,14 +196,6 @@ public class obstacleGenerator : MonoBehaviour {
     public void ChangeDirection(bool isMovingLeftSide)
     {
         isMovingLeft = isMovingLeftSide;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.name == "Spaceman")
-        {
-            GetComponent<AudioSource>().PlayOneShot(collideSound);
-        }
     }
 
 }

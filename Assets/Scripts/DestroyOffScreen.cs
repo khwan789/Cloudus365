@@ -20,10 +20,5 @@ public class DestroyOffScreen : MonoBehaviour {
             Destroy(this.gameObject);
 
         }
-
     }
-
-
-
-
 }

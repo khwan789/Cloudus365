@@ -9,9 +9,6 @@ public class Health : MonoBehaviour {
     int healthVar;
     int maxHealth = 3;
     float healthbarMaxSize;
-    bool isTransperant = false;
-
-    float waitTime = 0.0f;
 
     bool isInvul = false;
 
@@ -30,20 +27,9 @@ public class Health : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (isTransperant)
+        if (isInvul)
         {
-            if (Time.time > waitTime)
-            {
-                // Change alpha of sprite
-                Color alphaChange = this.GetComponent<SpriteRenderer>().color;
-
-                alphaChange.a = 1f;
-
-                this.GetComponent<SpriteRenderer>().color = alphaChange;
-
-                
-                isInvul = false;
-            }
+            Invoke("Bringback", 1.5f);
         }
 	}
 
@@ -54,20 +40,14 @@ public class Health : MonoBehaviour {
             if (healthVar > 1 && isInvul == false)
             {
                 // Change Health Var
-                healthVar--;
-                ChangedHealth();
+                isInvul = true;
                 // Change alpha of sprite
                 Color alphaChange = this.GetComponent<SpriteRenderer>().color;
-
                 alphaChange.a = .5f;
-
                 this.GetComponent<SpriteRenderer>().color = alphaChange;
-
-                isTransperant = true;
-
-                isInvul = true;
-                waitTime = Time.time + 1.5f;
-                GetComponent<AudioSource>().PlayOneShot(hurtSound);
+                GetComponent<AudioSource>().PlayOneShot(hurtSound, 1);
+                healthVar--;
+                ChangedHealth();
             }
             else
             {
@@ -77,9 +57,16 @@ public class Health : MonoBehaviour {
                 isGameOver = true;
             }
         }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "smallOb" || collision.gameObject.tag == "bigOb" || collision.gameObject.tag == "bg1")
+        {
+            isInvul = false;
+        }
 
     }
-   
+
     void ChangedHealth()
     {
 
@@ -97,5 +84,24 @@ public class Health : MonoBehaviour {
         {
             isGameOver = value;
         }
+    }
+    public bool Invul
+    {
+        get
+        {
+            return isInvul;
+        }
+        set
+        {
+            isInvul = value;
+        }
+    }
+
+    void Bringback()
+    {
+        // Change alpha of sprite
+        Color alphaChange = this.GetComponent<SpriteRenderer>().color;
+        alphaChange.a = 1f;
+        this.GetComponent<SpriteRenderer>().color = alphaChange;
     }
 }

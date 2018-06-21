@@ -31,7 +31,8 @@ public class Timer : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        time += Time.deltaTime;
+
+                time += Time.deltaTime;
         timer.text = "" + (int)time;
 
        // this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -4);
