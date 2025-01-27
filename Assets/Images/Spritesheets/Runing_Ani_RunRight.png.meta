@@ -1,55 +1,144 @@
 fileFormatVersion: 2
 guid: 20694d02182749246bff776cd48cb9f9
-timeCreated: 1507061428
-licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Runing_Ani_RunRight_0
-    21300002: Runing_Ani_RunRight_1
-    21300004: Runing_Ani_RunRight_2
-    21300006: Runing_Ani_RunRight_3
-    21300008: Runing_Ani_RunRight_4
-    21300010: Runing_Ani_RunRight_5
-    21300012: Runing_Ani_RunRight_6
-    21300014: Runing_Ani_RunRight_7
-    21300016: Runing_Ani_RunRight_8
-    21300018: Runing_Ani_RunRight_9
-    21300020: Runing_Ani_RunRight_10
-    21300022: Runing_Ani_RunRight_11
-    21300024: Runing_Ani_RunRight_12
-    21300026: Runing_Ani_RunRight_13
-    21300028: Runing_Ani_RunRight_14
-    21300030: Runing_Ani_RunRight_15
-    21300032: Runing_Ani_RunRight_16
-    21300034: Runing_Ani_RunRight_17
-    21300036: Runing_Ani_RunRight_18
-    21300038: Runing_Ani_RunRight_19
-    21300040: Runing_Ani_RunRight_20
-    21300042: Runing_Ani_RunRight_21
-    21300044: Runing_Ani_RunRight_22
-    21300046: Runing_Ani_RunRight_23
-    21300048: Runing_Ani_RunRight_24
-    21300050: Runing_Ani_RunRight_25
-    21300052: Runing_Ani_RunRight_26
-    21300054: Runing_Ani_RunRight_27
-    21300056: Runing_Ani_RunRight_28
-    21300058: Runing_Ani_RunRight_29
-    21300060: Runing_Ani_RunRight_30
-    21300062: Runing_Ani_RunRight_31
-    21300064: Runing_Ani_RunRight_32
-    21300066: Runing_Ani_RunRight_33
-    21300068: Runing_Ani_RunRight_34
-    21300070: Runing_Ani_RunRight_35
-    21300072: Runing_Ani_RunRight_36
-    21300074: Runing_Ani_RunRight_37
-    21300076: Runing_Ani_RunRight_38
-    21300078: Runing_Ani_RunRight_39
-    21300080: Runing_Ani_RunRight_40
-    21300082: Runing_Ani_RunRight_41
-    21300084: Runing_Ani_RunRight_42
-    21300086: Runing_Ani_RunRight_43
-    21300088: Runing_Ani_RunRight_44
-  serializedVersion: 4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Runing_Ani_RunRight_0
+  - first:
+      213: 21300002
+    second: Runing_Ani_RunRight_1
+  - first:
+      213: 21300004
+    second: Runing_Ani_RunRight_2
+  - first:
+      213: 21300006
+    second: Runing_Ani_RunRight_3
+  - first:
+      213: 21300008
+    second: Runing_Ani_RunRight_4
+  - first:
+      213: 21300010
+    second: Runing_Ani_RunRight_5
+  - first:
+      213: 21300012
+    second: Runing_Ani_RunRight_6
+  - first:
+      213: 21300014
+    second: Runing_Ani_RunRight_7
+  - first:
+      213: 21300016
+    second: Runing_Ani_RunRight_8
+  - first:
+      213: 21300018
+    second: Runing_Ani_RunRight_9
+  - first:
+      213: 21300020
+    second: Runing_Ani_RunRight_10
+  - first:
+      213: 21300022
+    second: Runing_Ani_RunRight_11
+  - first:
+      213: 21300024
+    second: Runing_Ani_RunRight_12
+  - first:
+      213: 21300026
+    second: Runing_Ani_RunRight_13
+  - first:
+      213: 21300028
+    second: Runing_Ani_RunRight_14
+  - first:
+      213: 21300030
+    second: Runing_Ani_RunRight_15
+  - first:
+      213: 21300032
+    second: Runing_Ani_RunRight_16
+  - first:
+      213: 21300034
+    second: Runing_Ani_RunRight_17
+  - first:
+      213: 21300036
+    second: Runing_Ani_RunRight_18
+  - first:
+      213: 21300038
+    second: Runing_Ani_RunRight_19
+  - first:
+      213: 21300040
+    second: Runing_Ani_RunRight_20
+  - first:
+      213: 21300042
+    second: Runing_Ani_RunRight_21
+  - first:
+      213: 21300044
+    second: Runing_Ani_RunRight_22
+  - first:
+      213: 21300046
+    second: Runing_Ani_RunRight_23
+  - first:
+      213: 21300048
+    second: Runing_Ani_RunRight_24
+  - first:
+      213: 21300050
+    second: Runing_Ani_RunRight_25
+  - first:
+      213: 21300052
+    second: Runing_Ani_RunRight_26
+  - first:
+      213: 21300054
+    second: Runing_Ani_RunRight_27
+  - first:
+      213: 21300056
+    second: Runing_Ani_RunRight_28
+  - first:
+      213: 21300058
+    second: Runing_Ani_RunRight_29
+  - first:
+      213: 21300060
+    second: Runing_Ani_RunRight_30
+  - first:
+      213: 21300062
+    second: Runing_Ani_RunRight_31
+  - first:
+      213: 21300064
+    second: Runing_Ani_RunRight_32
+  - first:
+      213: 21300066
+    second: Runing_Ani_RunRight_33
+  - first:
+      213: 21300068
+    second: Runing_Ani_RunRight_34
+  - first:
+      213: 21300070
+    second: Runing_Ani_RunRight_35
+  - first:
+      213: 21300072
+    second: Runing_Ani_RunRight_36
+  - first:
+      213: 21300074
+    second: Runing_Ani_RunRight_37
+  - first:
+      213: 21300076
+    second: Runing_Ani_RunRight_38
+  - first:
+      213: 21300078
+    second: Runing_Ani_RunRight_39
+  - first:
+      213: 21300080
+    second: Runing_Ani_RunRight_40
+  - first:
+      213: 21300082
+    second: Runing_Ani_RunRight_41
+  - first:
+      213: 21300084
+    second: Runing_Ani_RunRight_42
+  - first:
+      213: 21300086
+    second: Runing_Ani_RunRight_43
+  - first:
+      213: 21300088
+    second: Runing_Ani_RunRight_44
+  externalObjects: {}
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -66,7 +155,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -75,9 +169,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -89,49 +183,77 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
-  - buildTarget: DefaultTexturePlatform
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Standalone
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: iPhone
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: iPhone
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
-  - buildTarget: Android
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Android
     maxTextureSize: 2048
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -149,6 +271,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 02305410000000000800000000000000
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_1
       rect:
@@ -163,6 +292,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 22305410000000000800000000000000
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_2
       rect:
@@ -177,6 +313,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 42305410000000000800000000000000
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_3
       rect:
@@ -191,6 +334,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 62305410000000000800000000000000
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_4
       rect:
@@ -205,6 +355,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 82305410000000000800000000000000
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_5
       rect:
@@ -219,6 +376,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a2305410000000000800000000000000
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_6
       rect:
@@ -233,6 +397,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c2305410000000000800000000000000
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_7
       rect:
@@ -247,6 +418,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e2305410000000000800000000000000
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_8
       rect:
@@ -261,6 +439,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 03305410000000000800000000000000
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_9
       rect:
@@ -275,6 +460,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 23305410000000000800000000000000
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_10
       rect:
@@ -289,6 +481,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 43305410000000000800000000000000
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_11
       rect:
@@ -303,6 +502,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 63305410000000000800000000000000
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_12
       rect:
@@ -317,6 +523,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 83305410000000000800000000000000
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_13
       rect:
@@ -331,6 +544,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a3305410000000000800000000000000
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_14
       rect:
@@ -345,6 +565,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c3305410000000000800000000000000
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_15
       rect:
@@ -359,6 +586,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e3305410000000000800000000000000
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_16
       rect:
@@ -373,6 +607,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 04305410000000000800000000000000
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_17
       rect:
@@ -387,6 +628,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 24305410000000000800000000000000
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_18
       rect:
@@ -401,6 +649,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 44305410000000000800000000000000
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_19
       rect:
@@ -415,6 +670,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 64305410000000000800000000000000
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_20
       rect:
@@ -429,6 +691,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 84305410000000000800000000000000
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_21
       rect:
@@ -443,6 +712,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a4305410000000000800000000000000
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_22
       rect:
@@ -457,6 +733,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c4305410000000000800000000000000
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_23
       rect:
@@ -471,6 +754,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e4305410000000000800000000000000
+      internalID: 21300046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_24
       rect:
@@ -485,6 +775,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 05305410000000000800000000000000
+      internalID: 21300048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_25
       rect:
@@ -499,6 +796,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 25305410000000000800000000000000
+      internalID: 21300050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_26
       rect:
@@ -513,6 +817,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 45305410000000000800000000000000
+      internalID: 21300052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_27
       rect:
@@ -527,6 +838,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 65305410000000000800000000000000
+      internalID: 21300054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_28
       rect:
@@ -541,6 +859,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 85305410000000000800000000000000
+      internalID: 21300056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_29
       rect:
@@ -555,6 +880,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a5305410000000000800000000000000
+      internalID: 21300058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_30
       rect:
@@ -569,6 +901,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c5305410000000000800000000000000
+      internalID: 21300060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_31
       rect:
@@ -583,6 +922,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e5305410000000000800000000000000
+      internalID: 21300062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_32
       rect:
@@ -597,6 +943,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 06305410000000000800000000000000
+      internalID: 21300064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_33
       rect:
@@ -611,6 +964,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 26305410000000000800000000000000
+      internalID: 21300066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_34
       rect:
@@ -625,6 +985,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 46305410000000000800000000000000
+      internalID: 21300068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_35
       rect:
@@ -639,6 +1006,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 66305410000000000800000000000000
+      internalID: 21300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_36
       rect:
@@ -653,6 +1027,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 86305410000000000800000000000000
+      internalID: 21300072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_37
       rect:
@@ -667,6 +1048,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: a6305410000000000800000000000000
+      internalID: 21300074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_38
       rect:
@@ -681,6 +1069,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: c6305410000000000800000000000000
+      internalID: 21300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_39
       rect:
@@ -695,6 +1090,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: e6305410000000000800000000000000
+      internalID: 21300078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_40
       rect:
@@ -709,6 +1111,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 07305410000000000800000000000000
+      internalID: 21300080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_41
       rect:
@@ -723,6 +1132,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 27305410000000000800000000000000
+      internalID: 21300082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_42
       rect:
@@ -737,6 +1153,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 47305410000000000800000000000000
+      internalID: 21300084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_43
       rect:
@@ -751,6 +1174,13 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 67305410000000000800000000000000
+      internalID: 21300086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     - serializedVersion: 2
       name: Runing_Ani_RunRight_44
       rect:
@@ -765,9 +1195,71 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
+      bones: []
+      spriteID: 87305410000000000800000000000000
+      internalID: 21300088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
-  spritePackingTag: 
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Runing_Ani_RunRight_0: 21300000
+      Runing_Ani_RunRight_1: 21300002
+      Runing_Ani_RunRight_10: 21300020
+      Runing_Ani_RunRight_11: 21300022
+      Runing_Ani_RunRight_12: 21300024
+      Runing_Ani_RunRight_13: 21300026
+      Runing_Ani_RunRight_14: 21300028
+      Runing_Ani_RunRight_15: 21300030
+      Runing_Ani_RunRight_16: 21300032
+      Runing_Ani_RunRight_17: 21300034
+      Runing_Ani_RunRight_18: 21300036
+      Runing_Ani_RunRight_19: 21300038
+      Runing_Ani_RunRight_2: 21300004
+      Runing_Ani_RunRight_20: 21300040
+      Runing_Ani_RunRight_21: 21300042
+      Runing_Ani_RunRight_22: 21300044
+      Runing_Ani_RunRight_23: 21300046
+      Runing_Ani_RunRight_24: 21300048
+      Runing_Ani_RunRight_25: 21300050
+      Runing_Ani_RunRight_26: 21300052
+      Runing_Ani_RunRight_27: 21300054
+      Runing_Ani_RunRight_28: 21300056
+      Runing_Ani_RunRight_29: 21300058
+      Runing_Ani_RunRight_3: 21300006
+      Runing_Ani_RunRight_30: 21300060
+      Runing_Ani_RunRight_31: 21300062
+      Runing_Ani_RunRight_32: 21300064
+      Runing_Ani_RunRight_33: 21300066
+      Runing_Ani_RunRight_34: 21300068
+      Runing_Ani_RunRight_35: 21300070
+      Runing_Ani_RunRight_36: 21300072
+      Runing_Ani_RunRight_37: 21300074
+      Runing_Ani_RunRight_38: 21300076
+      Runing_Ani_RunRight_39: 21300078
+      Runing_Ani_RunRight_4: 21300008
+      Runing_Ani_RunRight_40: 21300080
+      Runing_Ani_RunRight_41: 21300082
+      Runing_Ani_RunRight_42: 21300084
+      Runing_Ani_RunRight_43: 21300086
+      Runing_Ani_RunRight_44: 21300088
+      Runing_Ani_RunRight_5: 21300010
+      Runing_Ani_RunRight_6: 21300012
+      Runing_Ani_RunRight_7: 21300014
+      Runing_Ani_RunRight_8: 21300016
+      Runing_Ani_RunRight_9: 21300018
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

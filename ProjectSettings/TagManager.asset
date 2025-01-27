@@ -10,14 +10,20 @@ TagManager:
   - bigOb
   - score
   - best
+  - Ground
+  - Obstacle
+  - Gold
+  - Score
+  - JumpButton
+  - SlideButton
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 

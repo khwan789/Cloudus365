@@ -1,0 +1,129 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files and backups
+*.tmp
+*.bak
+*.swp
+*.swo
+*.~*
+
+# IDEs and Editors
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs (IntelliJ, PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.psess
+
+# macOS system files
+.DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.javadoc/
+
+# C, C++
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dll
+
+# Go
+*.exe
+*.test
+*.out
+
+# Ruby
+*.gem
+*.rbc
+vendor/bundle/
+
+# PHP
+vendor/
+
+# Laravel
+.env
+.env.*
+
+# JavaScript/React
+node_modules/
+build/
+dist/
+*.env
+
+# Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+
+# Unreal Engine
+*.pdb
+*.opendb
+DerivedDataCache/
+*.sln
+
+# Images and binary files
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.ico
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+
+# Miscellaneous
+*.lock
+*.log
+*.db
+*.sqlite
+*.env
+*.key

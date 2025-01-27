@@ -2,31 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraPosition : MonoBehaviour {
+public class CameraPosition : MonoBehaviour
+{
+    public GameManager gameManager;
+    public ObjectPlayer player; // Reference to the player
+    private Vector3 playerPosition;
+    public Transform planet; // Reference to the planet
+    public float baseFollowDistance = 5f; // Default follow distance
+    public float sideFollowDistance = 3f; // Reduced follow distance on the sides
+    public float smoothSpeed = 0.125f; // Smoothing factor for camera movement
 
-    GameObject player;
-    TouchInput playerInput;
+    private Vector3 offset; // Offset for the camera position
 
-    GameObject planet;
-    PlanetGravity planetScript;
+    void LateUpdate()
+    {
+        if (player == null || planet == null) return;
 
-    bool freezeY;
+        playerPosition = player.basePosition;
 
-    // Use this for initialization
-    void Start () {
+        // Calculate the direction from the planet to the player
+        Vector3 playerToPlanetDirection = (playerPosition - planet.position).normalized;
 
-        player = GameObject.Find("Spaceman");
+        // Determine the vertical position relative to the planet's center
+        float verticalFactor = Mathf.Abs(playerToPlanetDirection.y); // Range: 0 (equator) to 1 (top/bottom)
 
-        playerInput = player.GetComponent<TouchInput>();
+        // Dynamically adjust follow distance
+        float followDistance = Mathf.Lerp(sideFollowDistance, baseFollowDistance, verticalFactor);
 
-        planet = GameObject.Find("Cloudus 456");
-        planetScript = planet.GetComponent<PlanetGravity>();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-        // Calculates direction the character's downward force
-        this.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -4);
-        this.transform.rotation = new Quaternion(player.transform.rotation.x, player.transform.rotation.y, 0, this.transform.rotation.w);
+        // Calculate the perpendicular direction to player's orbit for camera offset
+        Vector3 tangentialDirection = Vector3.Cross(playerToPlanetDirection, Vector3.forward).normalized;
+
+        // Determine the camera's target position by placing it ahead of the player in the tangential direction
+        Vector3 targetPosition = playerPosition + tangentialDirection * followDistance * player.direction;
+
+        // Keep Z consistent for the 2D camera
+        targetPosition.z = transform.position.z;
+
+        if (gameManager.isPlaying)
+        {
+            // Smoothly move the camera to the target position
+            transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed);
+        }
     }
 }
